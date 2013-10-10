@@ -1,0 +1,237 @@
+/* imports */
+@import url(http://fonts.googleapis.com/css?family=Brawler:400,700|Lobster:400,700);
+
+/* base */
+html {
+  overflow-y: scroll; /* always force a scrollbar in non-IE */
+}
+
+body {
+  background: #fff;
+  overflow-x: hidden;
+  height: 4550px;
+  line-height: 1.5;
+  color: #000;
+  font-size: 16px;
+  font-family: Georgia, sans-serif;
+}
+
+h1 {
+  color: #21a97e;
+  font-family: "Lobster", serif;
+}
+a {
+  font-size: 18px;
+  color: #21a97e;
+}
+/* page structure */
+
+#wrapper {
+  position: relative;
+}
+#welcome {
+  width: 100%;
+  background: #fff;
+}
+  #welcome h1 {
+    width: 940px;
+    padding: 10px 15px;
+    margin: 0 auto;
+    font-size: 50px;
+  }
+  #welcome em {
+    color: black;
+  }
+#top-social ul li {
+  /*display: inline;*/
+  list-style-type: none;
+  opacity: 1;
+  text-decoration: none;
+}
+  #top-social ul li:hover {
+    opacity: .75;
+  }
+#top-3 a:hover {
+  opacity: .75;
+ /* -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  transform: scale(1.5);*/
+}
+#top-2 a:hover {
+  opacity: .75;
+}
+/* nav */
+#main {
+  position: fixed;
+  top: 25%;
+  right: 0%;
+}
+  #main ul li {
+    list-style-type: none;
+    text-decoration: none;
+  }
+/*  a:hover {
+    color: blue;
+  }*/
+
+/* parallax */
+
+/* content */
+#info {
+  z-index: 4;
+  position: relative;
+  max-width: 940px;
+  padding: 0 5px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+  #info article {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.7);
+    ;
+  }
+  #info h1 {
+    margin: 0 0 25px 0;
+    font-size: 50px;
+    font-family: 'Lobster', Georgia, serif;
+    line-height: 65px;
+    -webkit-text-shadow: 1px 1px 1px #000;
+    -moz-text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px #000;
+  }
+
+    #about,
+    #work,
+    #contact,
+    #more {
+      padding-top: 105px;
+    }
+    #about {
+      position: absolute;
+      top: 0px;
+    }
+    #work {
+      position: absolute;
+      top: 1090px;
+    }
+    #contact {
+      position: absolute;
+      top: 2180px;
+    }
+    #more {
+      position: absolute;
+      top: 3270px;
+    }
+/* top layer (large images, content) */
+#parallax-top {
+  z-index: 3;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  width: 940px;
+  margin-left: -470px;
+}
+  #top-1 {
+    position: absolute;
+    top: 171px;
+    left: 400px;
+  }
+  #top-2 {
+    z-index: 2;
+    position: absolute;
+    top: 1250px;
+    left: 280px;
+    border: 20px solid black;
+  }
+  #top-3 {
+    position: absolute;
+    top: 900px;
+    left: 320px;
+    border: 20px solid black;
+  }
+  #top-social {
+    position: absolute;
+    top: 1800px;
+    left: 400px;
+  }
+  #top-4 {
+    position: absolute;
+    top: 2750px;
+    left: 165px;
+  }
+/* middle layer (clouds, umbrellas, etc) */
+#parallax-mid {
+  z-index: 2;
+  position: absolute;
+  left: 50%; /* align left edge with center of viewport */
+  top: 0;
+  width: 1200px;
+  margin-left: -600px; /* move left by half element's width */
+}
+  #mid-1 {
+    position: absolute;
+    top: 162px;
+    left: 200px;
+  }
+  #mid-2 {
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+  }
+/* wood */
+  #mid-3 {
+    position: absolute;
+    top: 3600px;
+    left: 450px;
+    /*width: 940px;*/
+    /*margin-left: 200px;*/
+  }
+  #mid-4 {
+    position: absolute;
+    top: 543px;
+    left: -35px;
+  }
+  #mid-5 {
+    position: absolute;
+    top: 1180px;
+    left: 250px;
+  }
+  #mid-6 {
+    position: absolute;
+    top: 900px;
+    left: 890px;
+  }
+  /* Parallax back layer */
+#parallax-back {
+  z-index: 1;
+  position: fixed;
+  left: 50%; /* align left edge with center of viewport */
+  top: 0;
+  width: 1200px;
+  margin-left: -600px; /* move left by half element's width */
+}
+  #back-1 {
+    position: absolute;
+    top: 700px;
+    left: 80px;
+    }
+  #back-2 {
+    position: absolute;
+    top: 440px;
+    left: 795px;
+    }
+  #back-3 {
+    position: absolute;
+    top: 900px;
+    left: -220px;
+    }
+  #back-4 {
+    position: absolute;
+    top: 950px;
+    left: 650px;
+    }
+  #back-5 {
+    position: absolute;
+    top: 1300px;
+    left: 100px;
+  }
