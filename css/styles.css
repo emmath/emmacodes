@@ -20,10 +20,42 @@ h1 {
   color: #21a97e;
   font-family: "Lobster", serif;
 }
-a {
-  font-size: 18px;
-  color: #21a97e;
+
+a, a:link,
+a:active,
+a:visited {
+-webkit-transition: color 0.25s ease-out;
+-moz-transition: color 0.25s ease-out;
+-o-transition: color 0.25s ease-out;
+transition: color 0.25s ease-out;
+color:#21a97e;
+font-size: 18px;
+outline: none;
+text-decoration:none;
 }
+  a:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    transform: scale(1.5);
+    /*color: #1180f0;*/
+    color: #42b0ff;
+    }
+
+p {
+  margin:1em 0;
+  }
+
+/*footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background: #21a97e;
+  color: #fff;
+  text-align: center;
+  font-family: 'Brawler', Georgia; sans-serif;
+
+}*/
 /* page structure */
 
 #wrapper {
@@ -53,9 +85,7 @@ a {
   }
 #top-3 a:hover {
   opacity: .75;
- /* -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  transform: scale(1.5);*/
+
 }
 #top-2 a:hover {
   opacity: .75;
@@ -64,15 +94,13 @@ a {
 #main {
   position: fixed;
   top: 25%;
-  right: 0%;
+  right: 10px;
+  text-align: right;
 }
   #main ul li {
     list-style-type: none;
     text-decoration: none;
   }
-/*  a:hover {
-    color: blue;
-  }*/
 
 /* parallax */
 
@@ -95,9 +123,9 @@ a {
     font-size: 50px;
     font-family: 'Lobster', Georgia, serif;
     line-height: 65px;
-    -webkit-text-shadow: 1px 1px 1px #000;
-    -moz-text-shadow: 1px 1px 1px #000;
-    text-shadow: 1px 1px 1px #000;
+    -webkit-text-shadow: 0px 2px 3px #000;
+    -moz-text-shadow: 0px 2px 3px #000;
+    text-shadow: 0px 2px 3px #000;
   }
 
     #about,
@@ -235,3 +263,4 @@ a {
     top: 1300px;
     left: 100px;
   }
+
